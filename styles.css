@@ -589,16 +589,15 @@ body{
 
     .nav-menu {
         position: fixed;
-        display: none;
+        display: flex;
         left: -100%;
-        gap: 1.5rem;
-        top:70px;
+        /*gap: 1.5rem;*/
+        top: 70px;
         flex-direction: column;
         background: white;
         width: 100%;
         padding: 1rem 0;
         transition: 0.3s;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
 
     .nav-menu.active {
