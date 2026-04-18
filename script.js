@@ -7,11 +7,11 @@ hamburger.addEventListener('click', ()=> {
 
 //Smooth scroll
 
-document.querySelectorAll('a[href^=^"#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behaviour: 'smooth'
+            behavior: 'smooth'
         });
         hamburger.classList.remove('active');
         navMenu.classList.remove('active');

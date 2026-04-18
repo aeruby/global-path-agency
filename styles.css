@@ -639,13 +639,35 @@ body{
         font-size: 2.2rem;
     }
 
+    .about-grid,
     .jobs-grid,
     .review-grid,
     .contact-grid {
         grid-template-columns: 1fr;
     }
+
+    .cta-nav{
+        margin-left: 0;
+        width: fit-content;
+    }
+    .hamburger {
+        display: flex;
+    }
 }
 
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--green), var(--dark-green));
+    border-radius: 4px;
+}
 
 
 /* Smooth scrolling */
