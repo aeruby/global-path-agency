@@ -643,6 +643,7 @@ body{
     .review-grid,
     .contact-grid {
         grid-template-columns: 1fr;
+        text-align: center;
     }
 
     .cta-nav{
