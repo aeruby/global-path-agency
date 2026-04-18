@@ -638,12 +638,15 @@ body{
         font-size: 2.2rem;
     }
 
-    .about-grid,
+    .about-grid
+    {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
     .jobs-grid,
     .review-grid,
     .contact-grid {
         grid-template-columns: 1fr;
-        text-align: center;
     }
 
     .cta-nav{
