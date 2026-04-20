@@ -676,6 +676,12 @@ body{
         font-size: 2.2rem;
     }
 
+    .about-image,
+    .about-text {
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
     .about-grid
     {
         grid-template-columns: 1fr;
