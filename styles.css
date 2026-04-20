@@ -699,6 +699,10 @@ body{
         text-align: center;
     }
 
+    .cta-nav i {
+        display: none;
+    }
+
     .hamburger {
         display: flex;
         flex: 0 0 auto;
