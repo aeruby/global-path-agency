@@ -12,7 +12,7 @@ body{
 }
 
 .container {
-    max-width: 1920px;
+    max-width: 1200;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -664,7 +664,9 @@ body{
     .name {
         flex: 1;
         text-align: center;
-        white-space: nowrap;
+    }
+
+    .name p {
         overflow: hidden;
         text-overflow: ellipsis;
         font-size: 0.9rem;
@@ -681,6 +683,7 @@ body{
     .about-image,
     .about-text {
         align-items: center;
+        grid-template-columns: 1fr;
         text-align: center;
         display: flex;
     }
