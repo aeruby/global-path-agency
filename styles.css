@@ -667,7 +667,9 @@ body{
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        font-size: 0.9rem;
     }
+
     .container {
         padding: 0 15px;
     }
