@@ -609,7 +609,6 @@ body{
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; 
-        font-size: 12px;
     }
 
     .nav-menu {
@@ -665,12 +664,9 @@ body{
     .name {
         flex: 1;
         text-align: center;
-    }
-
-    .name p {
+        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        font-size: 0.9rem;
     }
 
     .container {
