@@ -582,9 +582,33 @@ body{
     .cta-nav{
         margin-left: 0;
         width: fit-content;
+        flex: 0 0 auto;
+        padding: 0.5rem 1rem;
+        order: 3;
     }
+
+    .nav-container {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .hamburger {
         display: flex;
+        flex: 0 0 auto;
+        order: 1;
+    }
+
+    .name {
+        flex: 1;
+        text-align: center;
+        order: 2;
+    }
+
+    .name p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
     }
 
     .nav-menu {
@@ -598,6 +622,7 @@ body{
         width: 100%;
         padding: 1rem 0;
         transition: 0.3s;
+        order: 4;
     }
 
     .nav-menu.active {
@@ -630,6 +655,19 @@ body{
 }
 
 @media (max-width:480px) {
+    .nav-container {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+
+    .name {
+        flex: 1;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .container {
         padding: 0 15px;
     }
@@ -650,8 +688,9 @@ body{
     }
 
     .cta-nav{
-        margin-left: 0;
-        width: fit-content;
+        flex: 0 0 auto;
+        padding: 0.3rem 0.7rem;
+        font-size: 0.7rem;
     }
     .hamburger {
         display: flex;
